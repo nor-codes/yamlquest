@@ -7,6 +7,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+/**
+ * Author: Nonelela Cele
+ * Version: 1.0
+ * Date: 2024-12-22
+ */
 public class Parser {
 
     public ParseOutput parse(String filePath) throws EmptyFilePathException, IOException {

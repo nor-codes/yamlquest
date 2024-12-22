@@ -1,6 +1,11 @@
 package com.yamlquest.parser;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
+/**
+ * Author: Nonelela Cele
+ * Version: 1.0
+ * Date: 2024-12-22
+ */
 public class ParseInput {
     @JsonProperty("requests")
     private List<Request> requests;

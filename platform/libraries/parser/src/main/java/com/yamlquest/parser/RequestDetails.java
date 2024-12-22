@@ -1,5 +1,9 @@
 package com.yamlquest.parser;
-
+/**
+ * Author: Nonelela Cele
+ * Version: 1.0
+ * Date: 2024-12-22
+ */
 public class RequestDetails {
     private Request request;
     private String issue;

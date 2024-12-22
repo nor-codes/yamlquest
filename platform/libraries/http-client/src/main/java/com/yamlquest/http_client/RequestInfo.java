@@ -1,35 +1,25 @@
-package com.yamlquest.parser;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.yamlquest.http_client;
+
 import java.util.Map;
 /**
  * Author: Nonelela Cele
  * Version: 1.0
  * Date: 2024-12-22
  */
-public class Request {
-    @JsonProperty("name")
+public class RequestInfo {
+
     private String name;
 
-    @JsonProperty("method")
     private String method;
 
-    @JsonProperty("url")
     private String url;
 
-    @JsonProperty("headers")
-    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private Map<String, String> headers;
 
-    @JsonProperty("queryParams")
-    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private Map<String, String> queryParams;
 
-    @JsonProperty("contentType")
     private String contentType;
 
-    @JsonProperty("body")
-    @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private String requestBody;
 
     public String getName() {
