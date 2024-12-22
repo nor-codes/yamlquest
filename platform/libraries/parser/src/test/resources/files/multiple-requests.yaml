@@ -1,0 +1,17 @@
+requests:
+  - name: "Example JSON Request 1"
+    method: "POST"
+    url: "https://jsonplaceholder.typicode.com/posts"
+    headers:
+      Authorization: "Bearer sampleToken"
+    contentType: "application/json"
+    body: |
+      {
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+      }
+  - name: "Example JSON Request 2"
+    method: "GET"
+    url: "https://jsonplaceholder.typicode.com/comments"
+    contentType: "application/json"
