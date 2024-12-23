@@ -1,5 +1,4 @@
 package com.yamlquest.parser;
-
 import java.util.HashMap;
 /**
  * Author: Nonelela Cele

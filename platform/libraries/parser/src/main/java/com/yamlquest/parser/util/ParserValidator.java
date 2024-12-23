@@ -1,8 +1,6 @@
 package com.yamlquest.parser.util;
-
 import com.yamlquest.parser.*;
 import com.yamlquest.parser.exception.NoRequestsFoundException;
-
 import java.util.HashMap;
 
 public class ParserValidator {
@@ -41,5 +39,4 @@ public class ParserValidator {
         details.setRequest(request);
         return details;
     }
-
 }

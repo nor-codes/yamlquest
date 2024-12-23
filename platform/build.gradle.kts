@@ -5,6 +5,11 @@ plugins {
 group = "com.yamlquest"
 version = "1.0-SNAPSHOT"
 
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+}
+
 repositories {
     mavenCentral()
 }
