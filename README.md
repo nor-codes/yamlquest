@@ -12,3 +12,8 @@ Response Validation & Testing: Add the ability to validate responses from APIs a
 Integration with CI/CD Pipelines: Tailored for usage in infrastructure and API testing, enabling integration into CI/CD workflows.
 Web & Desktop Versions: Transition from CLI to full-fledged web or desktop versions in the future.
 The project is built using Java to improve my skills in the language, with future plans to explore other technologies like Go.
+
+
+You're welcome to contribute. I'm no expect but using this to enhance my java skills.
+
+contact: nonelelacele@gmail.com
