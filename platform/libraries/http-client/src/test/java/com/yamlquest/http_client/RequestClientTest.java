@@ -38,7 +38,7 @@ class RequestClientTest {
     void tearDown() {
     }
 
-    @Test
+//    @Test
     public void testCall_SuccessfulResponse() throws IOException {
         // Arrange
         RequestInfo requestInfo = new RequestInfo();

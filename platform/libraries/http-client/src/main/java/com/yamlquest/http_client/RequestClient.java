@@ -13,7 +13,7 @@ public class RequestClient {
                 .Builder()
                 .url(requestInfo.getUrl());
 
-        if (!requestInfo.getHeaders().isEmpty()){
+        if (requestInfo.getHeaders()!=null  && !requestInfo.getHeaders().isEmpty()){
             Headers headers = Headers.of(requestInfo.getHeaders());
             requestBuilder.headers(headers);
         }
@@ -39,10 +39,12 @@ public class RequestClient {
         try (Response response = client.newCall(request).execute()) {
             long endTime = System.currentTimeMillis();
             clientResponse.setStatusCode(response.code());
+            clientResponse.setSuccess(response.isSuccessful());
             clientResponse.setStatusMessage(response.message());
             clientResponse.setResponseBody(response.body() != null ? response.body().string() : null);
             clientResponse.setHeaders(response.headers().toMultimap());
             clientResponse.setResponseTime(endTime - startTime);
+            clientResponse.setRequestTitle(requestInfo.getName());
         }
         return clientResponse;
     }

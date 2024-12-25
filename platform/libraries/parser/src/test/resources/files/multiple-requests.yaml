@@ -1,5 +1,5 @@
 requests:
-  - name: "Example JSON Request 1"
+  - name: "Create Post"
     method: "POST"
     url: "https://jsonplaceholder.typicode.com/posts"
     headers:
@@ -11,7 +11,7 @@ requests:
         "body": "bar",
         "userId": 1
       }
-  - name: "Example JSON Request 2"
+  - name: "Get Comments"
     method: "GET"
     url: "https://jsonplaceholder.typicode.com/comments"
     contentType: "application/json"

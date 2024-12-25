@@ -13,6 +13,24 @@ public class ClientResponse {
     private Map<String, List<String>> headers;
     private String statusMessage;
     private long responseTime;
+    private boolean isSuccess;
+    private String requestTitle;
+
+    public String getRequestTitle() {
+        return requestTitle;
+    }
+
+    public void setRequestTitle(String requestTitle) {
+        this.requestTitle = requestTitle;
+    }
+
+    public boolean isSuccess() {
+        return isSuccess;
+    }
+
+    public void setSuccess(boolean success) {
+        isSuccess = success;
+    }
 
     // Getters and Setters
     public int getStatusCode() {

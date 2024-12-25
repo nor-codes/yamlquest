@@ -21,6 +21,8 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("org.yaml:snakeyaml")
+    implementation(project(":libraries:http-client"))
+    implementation(project(":libraries:parser"))
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
@@ -30,8 +32,8 @@ application {
 }
 
 java {
-    sourceCompatibility = JavaVersion.toVersion("17")
-    targetCompatibility = JavaVersion.toVersion("17")
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
 }
 
 tasks.test {
