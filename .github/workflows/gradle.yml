@@ -1,4 +1,4 @@
-name: project ci/cd flow
+name: "Run checks: all modules"
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
           cd platform
           ./gradlew test
 
-      - name: Build Application with Gradle Wrapper
-        run: |
-          cd platform
-          ./gradlew build
+      # - name: Build Application with Gradle Wrapper
+      #   run: |
+      #     cd platform
+      #     ./gradlew build
