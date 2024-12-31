@@ -23,6 +23,7 @@ dependencies {
     runtimeOnly("org.yaml:snakeyaml")
     implementation(project(":libraries:http-client"))
     implementation(project(":libraries:parser"))
+    testImplementation("org.mockito:mockito-core:5.14.2")
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
