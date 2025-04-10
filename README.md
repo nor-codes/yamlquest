@@ -1,7 +1,7 @@
 Project Overview: YAML Quest CLI
 YAML Quest CLI is a command-line application designed to execute HTTP requests defined in YAML files. It aims to provide a simple yet powerful way to run and manage API calls directly from YAML configuration, similar to tools like Postman but optimized for the command line.
 
-This project is a learning experience and is being built primarily to upskill and polish my Java skills. While I’m not an expert, I’m using this as a way to enhance my proficiency in Java, experiment with different tools, and explore new technologies, including plans to explore Go in the future.
+This project is a learning experience and is being built primarily to upskill and polish my Java skills. While I’m not an expert, I’m using this as a way to enhance my proficiency in Java, experiment with different tools, and explore new technologies, .
 
 I believe that personal projects like this are essential for growth, and I welcome contributions from anyone interested in learning alongside me!
 Contact:
@@ -41,7 +41,7 @@ yq-cli --help
 
 Download the `uninstall.sh` script from the link below:
 
-- [Download install.sh](https://github.com/nor-codes/yamlquest/releases/download/v1.0.0-beta.1/uninstall.sh)
+- [Download uninstall.sh](https://github.com/nor-codes/yamlquest/releases/download/v1.0.0-beta.1/uninstall.sh)
 
 Once downloaded run:
 ```bash
