@@ -1,6 +1,7 @@
 # Gradle
 .gradle/
 build/
+*bin/
 out/
 !gradle/libs.versions.toml # Exclude everything in gradle/ except for the versions catalog
 .gradle-cache/
