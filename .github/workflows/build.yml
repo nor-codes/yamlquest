@@ -37,7 +37,7 @@ jobs:
           echo "root content"
           ls
           echo "moving to src"
-          # cd src
+          cd src
           echo "src folder content"
           ls
           ./gradlew clean
