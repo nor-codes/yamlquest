@@ -1,27 +1,38 @@
-name: project ci/cd flow
+name: Build and Analyze Pipeline
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ opened, synchronize, reopened ]
+
 jobs:
   build:
+    name: Build and Analyze
     runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Run Tests with Gradle Wrapper
+      - name: Cache SonarQube packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
+      - name: Build and analyze
         run: |
           cd src
-          ./gradlew test
-      - name: Build Application with Gradle Wrapper
-        run: |
-          cd src
-          ./gradlew build
+          ./gradlew build sonar --info
