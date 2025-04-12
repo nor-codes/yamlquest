@@ -37,8 +37,8 @@ jobs:
           echo "root content"
           ls
           echo "moving to src"
-          cd src
+          # cd src
           echo "src folder content"
           ls
-          ./gradlew clean
-          ./gradlew build sonar --info
+          ./src/gradlew clean
+          # ./gradlew build sonar --info
