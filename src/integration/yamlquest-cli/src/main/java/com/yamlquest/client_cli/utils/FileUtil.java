@@ -6,6 +6,8 @@ public class FileUtil {
     private static final String YAML_EXTENSION_ONE = ".yaml";
     private static final String YAML_EXTENSION_TWO = ".yml";
 
+    private FileUtil() {}
+
     public static boolean isYaml(File file){
         if (file == null || !file.exists()) {
             return false;

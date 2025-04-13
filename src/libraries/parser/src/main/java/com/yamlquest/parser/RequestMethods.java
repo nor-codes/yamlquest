@@ -13,6 +13,7 @@ public class RequestMethods {
     public static final String PATCH = "PATCH";
     public static final String DELETE = "DELETE";
 
+    private RequestMethods() {}
     private static final Set<String> supportedMethods = new HashSet<>();
 
     static {

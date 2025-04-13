@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 public class ParserValidator {
 
+    private ParserValidator() {}
     public static ParseOutput validate(ParseInput parseInput){
         if (parseInput.getRequests().isEmpty()){
             throw new NoRequestsFoundException("No request(s) found on the yaml file");

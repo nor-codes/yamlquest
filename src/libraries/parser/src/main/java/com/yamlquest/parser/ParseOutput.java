@@ -1,5 +1,6 @@
 package com.yamlquest.parser;
-import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Author: Nonelela Cele
  * Version: 1.0
@@ -7,7 +8,7 @@ import java.util.HashMap;
  */
 public class ParseOutput {
 
-    HashMap<Integer,RequestDetails> requestHashMap;
+    Map<Integer,RequestDetails> requestHashMap;
     private int numberOfRequests;
 
     public int getNumberOfRequests() {
@@ -18,16 +19,16 @@ public class ParseOutput {
         this.numberOfRequests = numberOfRequests;
     }
 
-    public ParseOutput(HashMap<Integer, RequestDetails> requestHashMap, int numberOfRequests) {
+    public ParseOutput(Map<Integer, RequestDetails> requestHashMap, int numberOfRequests) {
         this.requestHashMap = requestHashMap;
         this.numberOfRequests = numberOfRequests;
     }
 
-    public HashMap<Integer, RequestDetails> getRequestHashMap() {
+    public Map<Integer, RequestDetails> getRequestHashMap() {
         return requestHashMap;
     }
 
-    public void setRequestHashMap(HashMap<Integer, RequestDetails> requestHashMap) {
+    public void setRequestHashMap(Map<Integer, RequestDetails> requestHashMap) {
         this.requestHashMap = requestHashMap;
     }
 }

@@ -2,7 +2,7 @@ package com.yamlquest.client_cli.utils;
 
 import com.yamlquest.client_cli.model.CliConfig;
 import io.micronaut.context.ApplicationContext;
-import picocli.CommandLine;;
+import picocli.CommandLine;
 
 public class VersionProvider implements CommandLine.IVersionProvider {
     @Override

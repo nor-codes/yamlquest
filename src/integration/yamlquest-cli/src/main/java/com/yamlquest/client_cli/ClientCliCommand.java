@@ -12,7 +12,7 @@ import picocli.CommandLine.Command;
         versionProvider = VersionProvider.class)
 public class ClientCliCommand implements Runnable {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         PicocliRunner.run(ClientCliCommand.class, args);
     }
 

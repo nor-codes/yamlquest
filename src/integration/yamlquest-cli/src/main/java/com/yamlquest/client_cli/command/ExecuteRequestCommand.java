@@ -15,11 +15,6 @@ public class ExecuteRequestCommand extends BaseCommand {
     private File file;
 
     @Override
-    public void help() {
-
-    }
-
-    @Override
     public void process() {
         ExecutorUtil.process(fileOption,file);
     }

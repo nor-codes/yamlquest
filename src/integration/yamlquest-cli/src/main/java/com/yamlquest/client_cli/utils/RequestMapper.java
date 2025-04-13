@@ -12,6 +12,8 @@ import java.util.Map;
 
 public class RequestMapper {
 
+    private RequestMapper() {}
+
     public static List<RequestInfo> mapParseOutputToRequestInfo(ParseOutput parseOutput) {
         List<RequestInfo> requestInfoList = new ArrayList<>();
 
@@ -25,8 +27,6 @@ public class RequestMapper {
                 RequestInfo requestInfo = getRequestInfo(request);
 
                 requestInfoList.add(requestInfo);
-            } else {
-                System.err.println("RequestDetails at key " + entry.getKey() + " is missing a Request object.");
             }
         }
 

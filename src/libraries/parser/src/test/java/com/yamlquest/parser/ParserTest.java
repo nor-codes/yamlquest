@@ -12,13 +12,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class ParserTest {
     Parser parser = new Parser();
     @Test
-    public void parseSingleRequestTest() throws EmptyFilePathException, IOException {
+    void parseSingleRequestTest() throws EmptyFilePathException, IOException {
         String filePath = Objects.requireNonNull(getClass().getClassLoader().getResource("files/single-request.yaml")).getPath();
         ParseOutput parseOutput = parser.parse(filePath);
         assertEquals(1,parseOutput.getNumberOfRequests());
     }
     @Test
-    public void parseMultipleRequestTest() throws EmptyFilePathException, IOException {
+    void parseMultipleRequestTest() throws EmptyFilePathException, IOException {
         String filePath = Objects.requireNonNull(getClass().getClassLoader().getResource("files/multiple-requests.yaml")).getPath();
         ParseOutput parseOutput = parser.parse(filePath);
         assertTrue(parseOutput.getNumberOfRequests()>1);
