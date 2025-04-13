@@ -8,7 +8,7 @@ out/
 
 # Java
 *.class
-*.jar
+# *.jar
 *.war
 *.ear
 *.iml
