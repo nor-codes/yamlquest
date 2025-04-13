@@ -4,8 +4,8 @@ public class RequestWithoutValidationsFormatter<T> extends Formatter<T> {
     @Override
     public FormatOutput format(T input) {
         FormatOutput output = null;
-        if (input instanceof ClientResponse){
-            output=getFormatOutput((ClientResponse)input);
+        if (input instanceof ClientResponse response){
+            output=getFormatOutput(response);
         }
         return output;
     }

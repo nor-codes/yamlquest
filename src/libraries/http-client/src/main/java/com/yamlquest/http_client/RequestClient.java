@@ -40,7 +40,7 @@ public class RequestClient {
             long endTime = System.currentTimeMillis();
             clientResponse.setStatusCode(response.code());
             clientResponse.setSuccess(response.isSuccessful());
-            clientResponse.setStatusMessage(response.message());
+            clientResponse.setStatusMessage(!response.message().isEmpty() ? response.message() : "no message from the response");
             clientResponse.setResponseBody(response.body() != null ? response.body().string() : null);
             clientResponse.setHeaders(response.headers().toMultimap());
             clientResponse.setResponseTime(endTime - startTime);

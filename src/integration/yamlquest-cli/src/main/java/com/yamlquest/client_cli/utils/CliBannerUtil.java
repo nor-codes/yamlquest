@@ -10,6 +10,8 @@ __     _____  ____
    |_|  \\___/|_|
 """;
 
+    private  CliBannerUtil(){}
+
     public static String getBanner(String version) {
         return BANNER + "\n  YAMLQUEST version: " + version;
     }

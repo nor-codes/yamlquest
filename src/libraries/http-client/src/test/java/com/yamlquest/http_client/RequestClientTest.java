@@ -38,11 +38,11 @@ class RequestClientTest {
     void tearDown() {
     }
 
-//    @Test
+    @Test
     public void testCall_SuccessfulResponse() throws IOException {
         // Arrange
         RequestInfo requestInfo = new RequestInfo();
-        requestInfo.setUrl("https://example.com/api");
+        requestInfo.setUrl("https://jsonplaceholder.typicode.com/posts");
         requestInfo.setMethod("GET");
         requestInfo.setHeaders(new HashMap<>());
         requestInfo.setContentType("application/json");
@@ -59,8 +59,8 @@ class RequestClientTest {
 
         // Assert
         assertEquals(200, clientResponse.getStatusCode());
-        assertEquals("OK", clientResponse.getStatusMessage());
-        assertEquals("{\"success\":true}", clientResponse.getResponseBody());
+        assertEquals("no message from the response", clientResponse.getStatusMessage());
+        assertTrue( clientResponse.getResponseBody().contains("userId"));
     }
 
 }

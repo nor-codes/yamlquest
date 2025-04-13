@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class ExecutorUtil {
 
+    private ExecutorUtil(){}
+
     public static void process(boolean fileOption, File file){
         if (!fileOption){
             throw new MissingOptionException("The file option was specified, but no valid file was provided. Please specify a valid file path or ensure the file exists.");
