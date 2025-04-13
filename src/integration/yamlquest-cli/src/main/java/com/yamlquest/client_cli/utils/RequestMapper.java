@@ -6,7 +6,6 @@ import com.yamlquest.parser.Request;
 import com.yamlquest.parser.RequestDetails;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +16,7 @@ public class RequestMapper {
     public static List<RequestInfo> mapParseOutputToRequestInfo(ParseOutput parseOutput) {
         List<RequestInfo> requestInfoList = new ArrayList<>();
 
-        HashMap<Integer, RequestDetails> requestDetailsMap = parseOutput.getRequestHashMap();
+        Map<Integer, RequestDetails> requestDetailsMap = parseOutput.getRequestHashMap();
 
         for (Map.Entry<Integer, RequestDetails> entry : requestDetailsMap.entrySet()) {
             RequestDetails requestDetails = entry.getValue();
