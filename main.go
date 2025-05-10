@@ -1,0 +1,6 @@
+package yamlquest
+
+
+func main(){
+	
+}
