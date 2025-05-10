@@ -103,5 +103,7 @@ Once you have defined your requests in the YAML file, you can run the requests u
 ```bash
 yq-cli execute --file <path-to-file>
 ```
+###Notice####
+After some evaluation, I've decided to rewrite YAMLQuest in Go. This change will eliminate the need for a Java runtime, making the tool more lightweight and easier to use. Since it was still in the beta stage, I believe this is the right time to move forward with the rewrite.
 
 🎉 Thank you for using YAMLQuest CLI!
