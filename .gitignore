@@ -1,79 +1,25 @@
-# Gradle
-.gradle/
-build/
-*bin/
-out/
-!gradle/libs.versions.toml # Exclude everything in gradle/ except for the versions catalog
-.gradle-cache/
+# Go binary
+/bin/
+/obj/
 
-# Java
-*.class
-# *.jar
-*.war
-*.ear
-*.iml
+# Go build artifacts
+*.exe
+*.test
+*.out
 
-# IntelliJ IDEA
+# Vendor directory
+/vendor/
+
+# IDE and editor folders
 .idea/
-*.ipr
-*.iws
-.idea/modules.xml
-.idea/*.iml
-.idea/workspace.xml
-.idea/misc.xml
-.idea/dictionaries/
-.idea/libraries/
-
-# VS Code
 .vscode/
 
-# Eclipse
-.project
-.classpath
-.settings/
+# Dependency directories
+/Godeps/
+/vendor/
 
-# OS Generated Files
-.DS_Store
-Thumbs.db
+# GoLand
+/.idea/
 
-# Logs
+# Log files
 *.log
-logs/
-
-# Test Results
-*.out
-*.test
-
-# Temporary Files
-*.tmp
-*.swp
-*~
-
-# Generated Files
-*.generated
-
-# Tool-Specific Files
-.env
-*.pem
-*.crt
-*.key
-
-# Dependency Management
-node_modules/
-package-lock.json
-yarn.lock
-npm-debug.log
-
-# Gradle Wrapper Files (if using wrapper)
-.gradle/wrapper/
-gradle/wrapper/gradle-wrapper.jar
-gradle/wrapper/gradle-wrapper.properties
-
-# Docker
-docker-compose.override.yml
-*.env
-
-# Kotlin DSL
-*.kts~
-# Ignore the src folder only in the root project
-/platform/src/

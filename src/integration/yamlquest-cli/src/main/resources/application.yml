@@ -1,5 +1,0 @@
-micronaut:
-  application:
-    name: client-cli
-config:
-  version: v1.0.0-beta.1
