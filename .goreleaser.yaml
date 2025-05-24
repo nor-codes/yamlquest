@@ -1,4 +1,4 @@
-project_name: yquest
+project_name: YAMLQuest
 
 builds:
   - main: ./main.go
