@@ -1,6 +1,7 @@
 # Go binary
 /bin/
 /obj/
+/dist
 
 # Go build artifacts
 *.exe

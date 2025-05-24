@@ -10,8 +10,6 @@ builds:
 
 archives:
   - format: tar.gz
-    files:
-      - yquest
 
 # snapshot:
 #   enabled: true
