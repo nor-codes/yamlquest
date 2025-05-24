@@ -23,3 +23,5 @@
 
 # Log files
 *.log
+
+/test-files

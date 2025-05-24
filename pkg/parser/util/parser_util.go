@@ -1,4 +1,4 @@
-package util
+package parser_util
 
 import (
 	"fmt"

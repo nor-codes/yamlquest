@@ -24,19 +24,19 @@ type ParserOutput struct {
 	ErrorContent string
 }
 
-func Parse(filePath string)(ParserOutput){
+func Parse(filePath string)(RequestContent, error){
 
 	var requestContent RequestContent
-	content, err := util.ReadContent(filePath)
+	content, err := parser_util.ReadContent(filePath)
 
 	if err != nil{
-		return ParserOutput{ ErrorContent: err.Error()}
+		return RequestContent{}, err
 	}
 
 	err = yaml.Unmarshal(content,&requestContent)
 	if err != nil{
-		return ParserOutput{ ErrorContent: err.Error()}
+		return RequestContent{}, err
 	}
 
-	return ParserOutput{RequestContent: requestContent}
+	return requestContent, err
 }
