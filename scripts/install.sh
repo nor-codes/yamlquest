@@ -3,7 +3,7 @@
 
 set -e
 
-URL="https://HOST_HERE/YAMLQuest_1.0.0-beta.2_linux_amd64.tar.gz"
+URL="https://github.com/nor-codes/yamlquest/releases/download/v1.0.0-beta.2/YAMLQuest_1.0.0-beta.2_linux_amd64.tar.gz"
 TMP_ARCHIVE="/tmp/yamlquest.tar.gz"
 
 echo "Downloading YAMLQuest from $URL ..."
