@@ -1,10 +1,7 @@
-### Notice ####
-After some evaluation, I've decided to rewrite YAMLQuest in Go. This change will eliminate the need for a Java runtime, making the tool more lightweight and easier to use. Since it was still in the beta stage, I believe this is the right time to move forward with the rewrite.
-
 Project Overview: YAML Quest CLI
 YAML Quest CLI is a command-line application designed to execute HTTP requests defined in YAML files. It aims to provide a simple yet powerful way to run and manage API calls directly from YAML configuration, similar to tools like Postman but optimized for the command line.
 
-This project is a learning experience and is being built primarily to upskill and polish my Java skills. While I’m not an expert, I’m using this as a way to enhance my proficiency in Java, experiment with different tools, and explore new technologies, .
+This project is a learning experience and is being built primarily to upskill and polish my Golang skills. While I’m not an expert, I’m using this as a way to enhance my proficiency in Golang, experiment with different tools, and explore new technologies, .
 
 I believe that personal projects like this are essential for growth, and I welcome contributions from anyone interested in learning alongside me!
 Contact:
